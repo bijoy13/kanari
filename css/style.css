@@ -1,0 +1,118 @@
+.wrapper{
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+#sidebar{
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 100vh;
+    
+}
+#sidebar.active{
+    margin-left: -350px;
+}
+.button-nav{
+    padding-left: 3px !important; 
+}
+
+.nav-fill .nav-item{
+    flex: 1 1;
+}
+
+.header{
+    padding: 2px 20px;
+    background: rgb(26, 27, 34);
+    color: #f1f1f1;
+    width: 100%;
+    height: 80px;
+  }
+
+
+.footer-bg{
+    margin-left: 350px;
+    margin-bottom: 0px;
+    position: relative;
+    color: white;
+    background-color: rgb(26, 27, 34);
+    height: 60px;
+    width: 100%;
+    
+}
+.control-button{
+    padding: 5px !important;
+    margin-top: 18px;
+}
+/*
+    imorted language
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+    height: 100%;
+}
+
+
+#sidebar {
+    background: rgb(26, 27, 34);
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: white;
+    background-color: transparent;
+    border-color: transparent; 
+    border-bottom: 3px solid !important;
+    border-bottom-color: red !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+.nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.nav-link:hover {
+    border: none;
+}
+.btn-info {
+    color: rgb(148, 148, 148) !important;
+    background-color: rgb(26, 27, 34);
+    border: none !important;
+
+}
+.btn-info:hover{
+    border: none !important;
+    color: transparent; 
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    color: rgb(148, 148, 148) !important;
+    background-color: rgb(26, 27, 34);
+    border: none !important;
+}
+.my-btn{
+    background-color: transparent;
+    color: gray;
+    height: 30px;
+    width: 140px;
+    margin-top: 17px;
+    border: solid 1px;
+    border-color: gray;
+}
+
+@media (max-width: 768px){
+    #sidebar{
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
